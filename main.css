@@ -13,7 +13,7 @@ body {
 
 /* Navbar */
 .navbar {
-    display: flex;flex-direction: column;
+    display: flex;flex-direction: row;
     justify-content: space-between;
 margin:auto;
     align-items: center;
@@ -169,7 +169,7 @@ height:100px
     }
 
     .courses {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
