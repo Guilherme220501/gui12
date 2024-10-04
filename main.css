@@ -64,6 +64,7 @@ margin:auto;
 }
 
 .bar {
+margin:left,
     display: block;
     width: 25px;
     height: 3px;
