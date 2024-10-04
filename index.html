@@ -14,8 +14,15 @@
 <body>
     <!-- Cabeçalho -->
     <header>
-        <nav class="navbar">
-            <div class="logo">Meu Portfólio</div>
+          <div class="menu-btn" onclick="toggleMenu()">
+        ☰ Menu
+    </div>
+
+    <!-- Menu Lateral -->
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h2>Menu</h2>
+            <button class="close-btn" onclick="toggleMenu()">×</button>
             <ul class="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">Sobre Mim</a></li>
@@ -23,7 +30,7 @@
                 <li><a href="#projects">Projetos</a></li>
                 <li><a href="#contact">Contato</a></li>
                 <li><a href="#redes">Redes</a></li>
-            </ul>
+            </ul></div>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
