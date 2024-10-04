@@ -14,9 +14,10 @@ body {
 /* Botão do Menu */
 .menu-btn {
     font-size: 20px;
+font-style:oblique;
     cursor: pointer;
     padding: 15px;
-    background-color: #333;
+    background-color: blue;
     color: white;
     position: fixed;
     top: 10px;
