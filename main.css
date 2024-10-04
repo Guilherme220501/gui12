@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #200156;
+    color: #fff;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    background-color: #ffffff;
+    border: 3px solid red;border-radius: 0.5%;
+    padding: 10px;
+    border-radius: 10px 10px;
+    
+
+}
+
+.menu li {
+    margin: 0 15px;
+    
+}
+
+.menu li a {
+    white-space: nowrap;
+    text-decoration: none;
+    color:red;
+    font-size: 18px;
+    text-shadow: 6px;
+    font-family: 'Times New Roman', Times, serif;text-shadow: 6px;
+  
+}
+
+.menu li a:hover {
+    color: black;
+}
+
+/* Logo */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Menu Responsivo */
+.menu-toggle {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+/* Seções */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.home-section {
+    background-color: #6f6a84;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    border-radius: 10px 10px;
+}
+
+.home-section h1 {
+    font-size: 48px;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.color{width: 350px;border-radius: 10%;margin: auto;display: flex;flex-direction: row;padding: 10px;background-color: blue;border: 6px solid whitesmoke;gap: 10px;}
+.color1{width: 380px;border-radius: 10%;margin: auto;display: flex;flex-direction: row;padding: 10px;background-color: rgb(0, 0, 0);border: 6px solid whitesmoke;gap: 10px;}
+section p {
+    font-size: 18px;
+    color: #8c8888;
+}
+
+/* Cursos */
+.courses {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.course-item {
+    border: 6px solid #9e9898;
+    background-color: #1948bd;
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.course-item:hover {
+    transform: scale(1.05);
+}
+
+/* Projetos */
+ul {
+    list-style: none;
+    text-align: center;
+    margin: 20px 40px;
+    
+}
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .courses {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-item {
+        width: 90%;
+    }
+}
