@@ -200,9 +200,13 @@
             const hours = now.getHours().toString().padStart(2, '0');
             const minutes = now.getMinutes().toString().padStart(2, '0');
             const seconds = now.getSeconds().toString().padStart(2, '0');
-            clock.textContent = `Hora Atual: ${hours}:${minutes}:${seconds}`;
+            clock.textContent =  `Hora: 
+            ${hours}:${minutes}:${seconds}`;
         }
         setInterval(showTime, 1000);
+    
     </script>
+    <script src="script.js"></script>
+    <script>showAlert("Welcome my formulary")</script>
 </body>
 </html>
